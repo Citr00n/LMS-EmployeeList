@@ -70,7 +70,7 @@ class Main(tk.Frame):
     def records(self, name, tel, email, salary):
         self.db.insert_data(name, tel, email, salary)
         self.view_records()
-        self.db.conn.commit()  # сохраняем изменения
+        self.db.conn.commit()
 
     # Метод редактирования
     def edit_record(self, name, phone, email, salary):
